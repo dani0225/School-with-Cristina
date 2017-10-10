@@ -14,6 +14,8 @@
 		841AD4D11F8CB63F00FB8705 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841AD4CF1F8CB63F00FB8705 /* LaunchScreen.storyboard */; };
 		841AD4D91F8CB73000FB8705 /* mainVideoListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AD4D81F8CB73000FB8705 /* mainVideoListScreen.swift */; };
 		841AD4DC1F8CBDAB00FB8705 /* myVideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AD4DB1F8CBDAB00FB8705 /* myVideoTableViewCell.swift */; };
+		841AD4DF1F8CBFA700FB8705 /* VideoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841AD4DE1F8CBFA700FB8705 /* VideoObject.swift */; };
+		843CCA781F8D3C0C00F94CAA /* Detail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		841AD4D21F8CB63F00FB8705 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		841AD4D81F8CB73000FB8705 /* mainVideoListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainVideoListScreen.swift; sourceTree = "<group>"; };
 		841AD4DB1F8CBDAB00FB8705 /* myVideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myVideoTableViewCell.swift; sourceTree = "<group>"; };
+		841AD4DE1F8CBFA700FB8705 /* VideoObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoObject.swift; sourceTree = "<group>"; };
+		843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail1ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				841AD4CF1F8CB63F00FB8705 /* LaunchScreen.storyboard */,
 				841AD4D21F8CB63F00FB8705 /* Info.plist */,
 				841AD4CA1F8CB63F00FB8705 /* School_with_Cristina.xcdatamodeld */,
+				841AD4DE1F8CBFA700FB8705 /* VideoObject.swift */,
+				843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */,
 			);
 			path = "School with Cristina";
 			sourceTree = "<group>";
@@ -161,7 +167,9 @@
 				841AD4D91F8CB73000FB8705 /* mainVideoListScreen.swift in Sources */,
 				841AD4DC1F8CBDAB00FB8705 /* myVideoTableViewCell.swift in Sources */,
 				841AD4CC1F8CB63F00FB8705 /* School_with_Cristina.xcdatamodeld in Sources */,
+				843CCA781F8D3C0C00F94CAA /* Detail1ViewController.swift in Sources */,
 				841AD4C41F8CB63F00FB8705 /* AppDelegate.swift in Sources */,
+				841AD4DF1F8CBFA700FB8705 /* VideoObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
