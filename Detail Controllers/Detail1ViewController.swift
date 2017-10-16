@@ -22,13 +22,22 @@ class Detail1ViewController: UIViewController {
     
     @IBOutlet var externalButtonOutlet: UIButton!
     
+    @IBOutlet var appStoreButtonOutlet: UIButton!
+    
+    
     //Butoane
+    
+    
+    @IBAction func appStoreButtonAction(_ sender: Any) {
+    }
+    
+    
     @IBAction func startButton(_ sender: Any) {
         
         startButtonOutlet.isHidden = true
         
         
-        timer = Timer.scheduledTimer(timeInterval: 2, target: self, selector: #selector(changeTextAndCharacter), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(changeTextAndCharacter), userInfo: nil, repeats: false)
     }
     
     @IBAction func openSafari(_ sender: Any) {
@@ -58,6 +67,7 @@ class Detail1ViewController: UIViewController {
         // Do any additional setup after loading the view.
        labelOutlet.isHidden = true
        externalButtonOutlet.isHidden = true
+        appStoreButtonOutlet.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -78,9 +88,11 @@ class Detail1ViewController: UIViewController {
     @objc func changeTextAndCharacter()
     {
         characterLabel.image = UIImage(named:"teacher")
+        startButtonOutlet.setTitle("Cristina the Wise", for: .normal)
+        startButtonOutlet.isHidden = false
         labelOutlet.isHidden = false
         labelOutlet.text = "Ia sa vedem ce ai mai invatat. Data trecuta ai fost cam varzuta"
-        labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.1)
+        labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.05)
         
         
         timer = Timer.scheduledTimer(timeInterval: 7, target: self, selector: #selector(secondDialogue), userInfo: nil, repeats: false)
@@ -90,6 +102,7 @@ class Detail1ViewController: UIViewController {
     @objc func secondDialogue()
     {
         characterLabel.image = UIImage(named: "student")
+        startButtonOutlet.setTitle("Daniel the IOS Wannabe", for: .normal)
         labelOutlet.text = "..."
         labelOutlet.text = "Am invatat Protocols."
         labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.1)
@@ -103,29 +116,32 @@ class Detail1ViewController: UIViewController {
         
         labelOutlet.text = "..."
         labelOutlet.text = "Un protocol defineste un sablon de proprietati si metode. Protocolul poate fi adoptat de o clasa, structura sau de un enum. Daca un element satisface cerintele unui protocol putem spune ca acesta se conformeaza protocolului"
-        labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.06)
+        labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.04)
         
-        timer = Timer.scheduledTimer(timeInterval: 15, target: self, selector: #selector(forthDialogue), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 12, target: self, selector: #selector(forthDialogue), userInfo: nil, repeats: false)
         
     }
     
     @objc func forthDialogue()
     {
         characterLabel.image = UIImage(named:"teacher")
+        startButtonOutlet.setTitle("Cristina the Wise", for: .normal)
         labelOutlet.text = "..."
         labelOutlet.text = "Poti sa imi dai un exemplu?"
         labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.1)
         
-        timer = Timer.scheduledTimer(timeInterval: 9, target: self, selector: #selector(fifthDialogue), userInfo: nil, repeats: false)
+        timer = Timer.scheduledTimer(timeInterval: 4.5, target: self, selector: #selector(fifthDialogue), userInfo: nil, repeats: false)
         
     }
     @objc func fifthDialogue()
     {
         characterLabel.image = UIImage(named:"student")
+        startButtonOutlet.setTitle("Daniel the IOS wannabe", for: .normal)
         labelOutlet.text = "..."
-        labelOutlet.text = "Sigur, da click pe butonul de mai sus pentru cateva exemple."
-        labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.1)
+        labelOutlet.text = "Sigur, da click pe butonul de mai sus pentru un exemplu de cod, iar apoi pe Icon-ul de mai jos pentru o mini aplicatie."
+        labelOutlet.animate(newText: labelOutlet.text ?? "Error no text", characterDelay: 0.05)
         externalButtonOutlet.isHidden = false
+        appStoreButtonOutlet.isHidden = false
         
     }
     
