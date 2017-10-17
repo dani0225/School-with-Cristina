@@ -18,6 +18,7 @@
 		8438091E1F9532920055BEEE /* Detail1BViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438091D1F9532920055BEEE /* Detail1BViewController.swift */; };
 		843809201F9534790055BEEE /* SelectionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8438091F1F9534790055BEEE /* SelectionScreen.swift */; };
 		843CCA781F8D3C0C00F94CAA /* Detail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */; };
+		8447DE781F96842500AF4551 /* appDelegateScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DE771F96842500AF4551 /* appDelegateScreen1.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		8438091D1F9532920055BEEE /* Detail1BViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail1BViewController.swift; sourceTree = "<group>"; };
 		8438091F1F9534790055BEEE /* SelectionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectionScreen.swift; sourceTree = "<group>"; };
 		843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail1ViewController.swift; sourceTree = "<group>"; };
+		8447DE771F96842500AF4551 /* appDelegateScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDelegateScreen1.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +55,8 @@
 				841AD4C21F8CB63F00FB8705 /* School with Cristina */,
 				841AD4DD1F8CBDCA00FB8705 /* VideoCell */,
 				841AD4C11F8CB63F00FB8705 /* Products */,
-				8438091C1F9525F20055BEEE /* Detail Controllers */,
+				8438091C1F9525F20055BEEE /* Protocols */,
+				8447DE761F9683E100AF4551 /* App delegate */,
 				841AD4DA1F8CB74400FB8705 /* StoryBoard */,
 			);
 			sourceTree = "<group>";
@@ -96,14 +99,22 @@
 			path = VideoCell;
 			sourceTree = "<group>";
 		};
-		8438091C1F9525F20055BEEE /* Detail Controllers */ = {
+		8438091C1F9525F20055BEEE /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */,
 				8438091D1F9532920055BEEE /* Detail1BViewController.swift */,
 				8438091F1F9534790055BEEE /* SelectionScreen.swift */,
 			);
-			path = "Detail Controllers";
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		8447DE761F9683E100AF4551 /* App delegate */ = {
+			isa = PBXGroup;
+			children = (
+				8447DE771F96842500AF4551 /* appDelegateScreen1.swift */,
+			);
+			path = "App delegate";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +192,7 @@
 				841AD4D91F8CB73000FB8705 /* mainVideoListScreen.swift in Sources */,
 				841AD4DC1F8CBDAB00FB8705 /* myVideoTableViewCell.swift in Sources */,
 				8438091E1F9532920055BEEE /* Detail1BViewController.swift in Sources */,
+				8447DE781F96842500AF4551 /* appDelegateScreen1.swift in Sources */,
 				841AD4CC1F8CB63F00FB8705 /* School_with_Cristina.xcdatamodeld in Sources */,
 				843CCA781F8D3C0C00F94CAA /* Detail1ViewController.swift in Sources */,
 				841AD4C41F8CB63F00FB8705 /* AppDelegate.swift in Sources */,

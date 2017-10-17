@@ -14,6 +14,8 @@ class mainVideoListScreen: UIViewController {
     
     let nameOfSegue1 = "mainToDetailScreen"
     
+    let SegueToAppDelegate = "mainToAppDelegate"
+    
     @IBOutlet var tableViewOutlet: UITableView!
     
     
@@ -70,7 +72,7 @@ class mainVideoListScreen: UIViewController {
     {
         var tempVideos: [Video] = []
         
-        let video1 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
+        let video1 = Video(image: #imageLiteral(resourceName: "protocols"), title: "Protocols")
         let video2 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "blalba")
         let video3 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Yofsadda")
         let video4 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
@@ -112,9 +114,21 @@ extension mainVideoListScreen: UITableViewDataSource,UITableViewDelegate
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let video = videosArray[indexPath.row]
-        performSegue(withIdentifier: nameOfSegue1, sender: video)
+        
         
     //pt segue diferit if indexPath.row == 1 {performsegue .... bla bla}
+        
+        if indexPath.row  == 0
+        {
+          performSegue(withIdentifier: nameOfSegue1, sender: video)
+        }
+        
+        if indexPath.row == 1
+        {
+            performSegue(withIdentifier: SegueToAppDelegate, sender: video)
+        }
+        
+        
     }
     
    
