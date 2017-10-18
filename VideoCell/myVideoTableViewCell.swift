@@ -22,5 +22,7 @@ class myVideoTableViewCell: UITableViewCell {
         videoTitleLabel.text = aVideo.title
     }
     
+    
+    
 
 }

@@ -204,13 +204,41 @@
                     <view key="view" contentMode="scaleToFill" id="Ylw-2X-9d9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-4f-1gZ">
+                                <rect key="frame" x="16" y="208" width="343" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">App delegate este set de metode care sunt chemate de UIApplication in raspuns la evenimente importante ce au loc in viata unui aplicatii</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bg8-QL-3Ix">
+                                <rect key="frame" x="0.0" y="64" width="262.5" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="VCN-XD-mMZ"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9NC-A1-noB">
+                                <rect key="frame" x="298" y="118" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bg8-QL-3Ix" firstAttribute="top" secondItem="rps-1g-fOU" secondAttribute="top" id="8hN-0Z-V5F"/>
+                            <constraint firstItem="bg8-QL-3Ix" firstAttribute="leading" secondItem="rps-1g-fOU" secondAttribute="leading" id="Cxl-9y-5w5"/>
+                            <constraint firstItem="bg8-QL-3Ix" firstAttribute="width" secondItem="Ylw-2X-9d9" secondAttribute="width" multiplier="0.7" id="di4-6W-tRA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="rps-1g-fOU"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2E7-Gm-BnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1641" y="699"/>
+            <point key="canvasLocation" x="1640.8" y="698.5007496251875"/>
         </scene>
         <!--Detail1B View Controller-->
         <scene sceneID="ym3-mi-A14">
