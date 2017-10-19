@@ -235,6 +235,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rps-1g-fOU"/>
                     </view>
+                    <connections>
+                        <outlet property="labelOutlet" destination="9NC-A1-noB" id="hC7-8t-WmD"/>
+                        <outlet property="uiImageOutlet" destination="bg8-QL-3Ix" id="uON-mk-1bm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2E7-Gm-BnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

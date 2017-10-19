@@ -64,6 +64,11 @@ class mainVideoListScreen: UIViewController {
             let destVc = segue.destination as! Detail1ViewController
             destVc.videoFromDetailViewController = sender as? Video
         }
+        if segue.identifier == SegueToAppDelegate
+        {
+            let destVc = segue.destination as! appDelegateScreen1
+            destVc.receiveDataFromMainSwiftFile = sender as? Video
+        }
     }
     
     
