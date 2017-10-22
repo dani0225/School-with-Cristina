@@ -16,6 +16,8 @@ class mainVideoListScreen: UIViewController {
     
     let SegueToAppDelegate = "mainToAppDelegate"
     
+    let segueToKeyboard = "keyBoardScreen1"
+    
     @IBOutlet var tableViewOutlet: UITableView!
     
     
@@ -64,11 +66,13 @@ class mainVideoListScreen: UIViewController {
             let destVc = segue.destination as! Detail1ViewController
             destVc.videoFromDetailViewController = sender as? Video
         }
-        if segue.identifier == SegueToAppDelegate
+       else if segue.identifier == SegueToAppDelegate
         {
             let destVc = segue.destination as! appDelegateScreen1
             destVc.receiveDataFromMainSwiftFile = sender as? Video
         }
+      
+        
     }
     
     
@@ -79,7 +83,7 @@ class mainVideoListScreen: UIViewController {
         
         let video1 = Video(image: #imageLiteral(resourceName: "protocols"), title: "Protocols")
         let video2 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "blalba")
-        let video3 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Yofsadda")
+        let video3 = Video(image: #imageLiteral(resourceName: "keyboard"), title: "Keyboard covering text")
         let video4 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
         let video5 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your firdsadsadast App")
         let video6 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
@@ -128,10 +132,15 @@ extension mainVideoListScreen: UITableViewDataSource,UITableViewDelegate
           performSegue(withIdentifier: nameOfSegue1, sender: video)
         }
         
-        if indexPath.row == 1
+       if indexPath.row == 1
         {
             performSegue(withIdentifier: SegueToAppDelegate, sender: video)
         }
+        if indexPath.row == 2
+        {
+            performSegue(withIdentifier: segueToKeyboard, sender: video)
+        }
+        
         
         
     }

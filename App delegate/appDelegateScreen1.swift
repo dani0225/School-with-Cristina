@@ -25,10 +25,13 @@ class appDelegateScreen1: UIViewController {
     
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setUI()
+     
     }
 
     
