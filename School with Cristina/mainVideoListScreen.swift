@@ -82,8 +82,8 @@ class mainVideoListScreen: UIViewController {
         var tempVideos: [Video] = []
         
         let video1 = Video(image: #imageLiteral(resourceName: "protocols"), title: "Protocols")
-        let video2 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "blalba")
-        let video3 = Video(image: #imageLiteral(resourceName: "keyboard"), title: "Keyboard covering text")
+        let video2 = Video(image: #imageLiteral(resourceName: "appDelegate"), title: "App")
+        let video3 = Video(image: #imageLiteral(resourceName: "keyboard3"), title: "Keyboard")
         let video4 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
         let video5 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your firdsadsadast App")
         let video6 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
@@ -145,6 +145,8 @@ extension mainVideoListScreen: UITableViewDataSource,UITableViewDelegate
         
     }
     
-   
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
     
 }
