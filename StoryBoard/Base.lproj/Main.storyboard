@@ -205,17 +205,9 @@
             <objects>
                 <viewController id="ZwT-Zj-ifE" customClass="appDelegateScreen1" customModule="School_with_Cristina" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ylw-2X-9d9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="800"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-4f-1gZ">
-                                <rect key="frame" x="16" y="208" width="343" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                <string key="text">App delegate este set de metode care sunt chemate de UIApplication in raspuns la evenimente importante ce au loc in viata unui aplicatii.  lalalalalaa</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bg8-QL-3Ix">
                                 <rect key="frame" x="0.0" y="64" width="300" height="128"/>
                                 <constraints>
@@ -228,19 +220,68 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="brS-GO-KqY">
+                                <rect key="frame" x="0.0" y="193" width="375" height="607"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOg-wt-8YL">
+                                        <rect key="frame" x="0.0" y="1" width="375" height="800"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-4f-1gZ">
+                                                <rect key="frame" x="5" y="5" width="365" height="375"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="375" id="rOK-rG-5b1"/>
+                                                </constraints>
+                                                <mutableString key="text">App delegateReprezinta un set de metode care sunt chemate de UIAplication in raspuns la evenimente importante din viata aplicatiei.App delegate joaca cateva roluri importante:1. Contine startup code al aplicatiei.2.Raspunde la schimbari cheie, in special la intreruperi si la modificari in starea de executie a aplicatiei, de ex: can aplicatia face tranzitia de la foreground la background.3. Raspunde la notificari venite din  afara aplicatiei, de ex: low-memory warning, download complete, notifications etc.4.Raspunde la evenimente care targheteaza aplicatia dar nu sunt specifice View-ului aplicatiei sau view controllerelor.
+5.Se poate folosi sa stocheze Central Data Object sau orice alt cod care nu apartine de nici un view controller.</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            </textView>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="appDel" translatesAutoresizingMaskIntoConstraints="NO" id="H9t-hq-tV0">
+                                                <rect key="frame" x="5" y="420" width="365" height="351"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="351" id="VTS-nf-oIM"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="H9t-hq-tV0" secondAttribute="trailing" constant="5" id="6Wd-t7-2eO"/>
+                                            <constraint firstItem="Pkb-4f-1gZ" firstAttribute="top" secondItem="xOg-wt-8YL" secondAttribute="top" constant="5" id="8MX-4Y-ksm"/>
+                                            <constraint firstItem="H9t-hq-tV0" firstAttribute="leading" secondItem="xOg-wt-8YL" secondAttribute="leading" constant="5" id="G0A-1m-N2V"/>
+                                            <constraint firstAttribute="height" constant="800" id="IWz-ox-uDW"/>
+                                            <constraint firstAttribute="trailing" secondItem="Pkb-4f-1gZ" secondAttribute="trailing" constant="5" id="K6v-6q-hUg"/>
+                                            <constraint firstItem="H9t-hq-tV0" firstAttribute="top" secondItem="Pkb-4f-1gZ" secondAttribute="bottom" constant="40" id="hiR-jz-FR0"/>
+                                            <constraint firstItem="Pkb-4f-1gZ" firstAttribute="leading" secondItem="xOg-wt-8YL" secondAttribute="leading" constant="5" id="vkm-VW-1Au"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xOg-wt-8YL" secondAttribute="bottom" id="AQO-zP-zfE"/>
+                                    <constraint firstItem="xOg-wt-8YL" firstAttribute="top" secondItem="brS-GO-KqY" secondAttribute="top" constant="1" id="B2L-T6-FuR"/>
+                                    <constraint firstAttribute="trailing" secondItem="xOg-wt-8YL" secondAttribute="trailing" id="Kf5-EA-1Dd"/>
+                                    <constraint firstItem="xOg-wt-8YL" firstAttribute="leading" secondItem="brS-GO-KqY" secondAttribute="leading" id="eZ8-Gs-8G9"/>
+                                </constraints>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="9NC-A1-noB" firstAttribute="top" secondItem="rps-1g-fOU" secondAttribute="top" id="6Iw-6h-fYD"/>
                             <constraint firstItem="bg8-QL-3Ix" firstAttribute="top" secondItem="rps-1g-fOU" secondAttribute="top" id="8hN-0Z-V5F"/>
                             <constraint firstItem="bg8-QL-3Ix" firstAttribute="leading" secondItem="rps-1g-fOU" secondAttribute="leading" id="Cxl-9y-5w5"/>
+                            <constraint firstItem="xOg-wt-8YL" firstAttribute="width" secondItem="Ylw-2X-9d9" secondAttribute="width" id="GbX-Ik-E95"/>
+                            <constraint firstItem="brS-GO-KqY" firstAttribute="bottom" secondItem="rps-1g-fOU" secondAttribute="bottom" id="ON4-JN-dOE"/>
+                            <constraint firstItem="brS-GO-KqY" firstAttribute="top" secondItem="bg8-QL-3Ix" secondAttribute="bottom" constant="1" id="TOk-zR-3bS"/>
+                            <constraint firstItem="brS-GO-KqY" firstAttribute="trailing" secondItem="rps-1g-fOU" secondAttribute="trailing" id="VSh-np-wqf"/>
                             <constraint firstItem="9NC-A1-noB" firstAttribute="height" secondItem="bg8-QL-3Ix" secondAttribute="height" id="Zdq-wG-bvE"/>
+                            <constraint firstItem="brS-GO-KqY" firstAttribute="leading" secondItem="rps-1g-fOU" secondAttribute="leading" id="c1J-5n-zhz"/>
                             <constraint firstItem="bg8-QL-3Ix" firstAttribute="width" secondItem="Ylw-2X-9d9" secondAttribute="width" multiplier="0.8" id="di4-6W-tRA"/>
                             <constraint firstItem="rps-1g-fOU" firstAttribute="trailing" secondItem="9NC-A1-noB" secondAttribute="trailing" constant="3" id="tcB-Vu-3Uy"/>
                             <constraint firstItem="9NC-A1-noB" firstAttribute="leading" secondItem="bg8-QL-3Ix" secondAttribute="trailing" constant="3" id="va2-ad-Tto"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="rps-1g-fOU"/>
                     </view>
+                    <size key="freeformSize" width="375" height="800"/>
                     <connections>
                         <outlet property="labelOutlet" destination="9NC-A1-noB" id="hC7-8t-WmD"/>
                         <outlet property="uiImageOutlet" destination="bg8-QL-3Ix" id="uON-mk-1bm"/>
@@ -248,7 +289,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2E7-Gm-BnB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1640.8" y="698.5007496251875"/>
+            <point key="canvasLocation" x="1640.8" y="698.05097451274366"/>
         </scene>
         <!--Key Board Screen1-->
         <scene sceneID="fQy-X8-vvs">
@@ -320,6 +361,7 @@
                             </mask>
                         </variation>
                     </view>
+                    <size key="freeformSize" width="375" height="667"/>
                     <connections>
                         <outlet property="emailOutlet" destination="fq3-44-JB6" id="7Ot-m5-fuZ"/>
                         <outlet property="mobileNumberOutlet" destination="Z0k-h3-5Zj" id="HHM-JW-O34"/>
@@ -329,7 +371,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPY-q7-qer" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="1435.2323838080961"/>
+            <point key="canvasLocation" x="652" y="1429"/>
         </scene>
         <!--Detail1B View Controller-->
         <scene sceneID="ym3-mi-A14">
@@ -455,6 +497,7 @@
     </scenes>
     <resources>
         <image name="app" width="512" height="512"/>
+        <image name="appDel" width="697" height="837"/>
         <image name="money" width="420" height="420"/>
         <image name="study" width="512" height="512"/>
     </resources>

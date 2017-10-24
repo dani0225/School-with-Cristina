@@ -93,7 +93,12 @@ class keyBoardScreen1: UIViewController, UITextFieldDelegate {
 
     
     
-    
+    //TO DO
+    // Observers and Notification
+    //collection view
+    //core data
+    //storyboard references
+    //TableView all functions
     
 }
 
