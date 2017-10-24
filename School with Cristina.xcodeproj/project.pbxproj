@@ -20,6 +20,8 @@
 		843CCA781F8D3C0C00F94CAA /* Detail1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */; };
 		8447DE781F96842500AF4551 /* appDelegateScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8447DE771F96842500AF4551 /* appDelegateScreen1.swift */; };
 		844AA53D1F9BC524005DC9AA /* keyBoardScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844AA53C1F9BC524005DC9AA /* keyBoardScreen1.swift */; };
+		8464222E1F9F7EFF00B7A22F /* collViewssScreen1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464222D1F9F7EFF00B7A22F /* collViewssScreen1.swift */; };
+		846422301F9F867400B7A22F /* myColectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8464222F1F9F867400B7A22F /* myColectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		843CCA771F8D3C0C00F94CAA /* Detail1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detail1ViewController.swift; sourceTree = "<group>"; };
 		8447DE771F96842500AF4551 /* appDelegateScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appDelegateScreen1.swift; sourceTree = "<group>"; };
 		844AA53C1F9BC524005DC9AA /* keyBoardScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyBoardScreen1.swift; sourceTree = "<group>"; };
+		8464222D1F9F7EFF00B7A22F /* collViewssScreen1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collViewssScreen1.swift; sourceTree = "<group>"; };
+		8464222F1F9F867400B7A22F /* myColectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myColectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 				8438091C1F9525F20055BEEE /* Protocols */,
 				8447DE761F9683E100AF4551 /* App delegate */,
 				844AA53B1F9BC4FF005DC9AA /* KeyBoard */,
+				846422281F9F757500B7A22F /* Collection Views */,
 				841AD4DA1F8CB74400FB8705 /* StoryBoard */,
 			);
 			sourceTree = "<group>";
@@ -126,6 +131,15 @@
 				844AA53C1F9BC524005DC9AA /* keyBoardScreen1.swift */,
 			);
 			path = KeyBoard;
+			sourceTree = "<group>";
+		};
+		846422281F9F757500B7A22F /* Collection Views */ = {
+			isa = PBXGroup;
+			children = (
+				8464222D1F9F7EFF00B7A22F /* collViewssScreen1.swift */,
+				8464222F1F9F867400B7A22F /* myColectionViewCell.swift */,
+			);
+			path = "Collection Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,6 +219,8 @@
 				8438091E1F9532920055BEEE /* Detail1BViewController.swift in Sources */,
 				8447DE781F96842500AF4551 /* appDelegateScreen1.swift in Sources */,
 				844AA53D1F9BC524005DC9AA /* keyBoardScreen1.swift in Sources */,
+				846422301F9F867400B7A22F /* myColectionViewCell.swift in Sources */,
+				8464222E1F9F7EFF00B7A22F /* collViewssScreen1.swift in Sources */,
 				841AD4CC1F8CB63F00FB8705 /* School_with_Cristina.xcdatamodeld in Sources */,
 				843CCA781F8D3C0C00F94CAA /* Detail1ViewController.swift in Sources */,
 				841AD4C41F8CB63F00FB8705 /* AppDelegate.swift in Sources */,

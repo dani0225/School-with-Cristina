@@ -18,6 +18,8 @@ class mainVideoListScreen: UIViewController {
     
     let segueToKeyboard = "keyBoardScreen1"
     
+    let segueToCollectionView = "mainToCollectionView"
+    
     @IBOutlet var tableViewOutlet: UITableView!
     
     
@@ -84,7 +86,7 @@ class mainVideoListScreen: UIViewController {
         let video1 = Video(image: #imageLiteral(resourceName: "protocols"), title: "Protocols")
         let video2 = Video(image: #imageLiteral(resourceName: "appDelegate"), title: "App")
         let video3 = Video(image: #imageLiteral(resourceName: "keyboard3"), title: "Keyboard")
-        let video4 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
+        let video4 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Collection")
         let video5 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your firdsadsadast App")
         let video6 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
         
@@ -139,6 +141,10 @@ extension mainVideoListScreen: UITableViewDataSource,UITableViewDelegate
         if indexPath.row == 2
         {
             performSegue(withIdentifier: segueToKeyboard, sender: video)
+        }
+        if indexPath.row == 3
+        {
+            performSegue(withIdentifier: segueToCollectionView, sender: video)
         }
         
         

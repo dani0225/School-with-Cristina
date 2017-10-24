@@ -46,9 +46,9 @@
                                                         <constraint firstAttribute="width" constant="290" id="p9o-Ux-5b4"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="yCW-es-3Do">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCW-es-3Do">
                                                     <rect key="frame" x="290" y="35" width="77" height="28"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="14"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -89,6 +89,7 @@
                         <segue destination="2wS-Hq-qOa" kind="show" identifier="mainToDetailScreen" id="XXd-eW-f97"/>
                         <segue destination="ZwT-Zj-ifE" kind="show" identifier="mainToAppDelegate" id="pQN-kb-0xb"/>
                         <segue destination="F9o-XY-9DJ" kind="show" identifier="keyBoardScreen1" id="aFZ-gF-cRp"/>
+                        <segue destination="ahA-Vz-amI" kind="show" identifier="mainToCollectionView" id="8da-jA-bTm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -153,9 +154,9 @@
                                     <segue destination="BLS-wB-ZTt" kind="show" id="H7O-Cg-DGd"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mai-2U-EuX">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mai-2U-EuX">
                                 <rect key="frame" x="290" y="64" width="85" height="99"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -226,14 +227,22 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xOg-wt-8YL">
                                         <rect key="frame" x="0.0" y="1" width="375" height="800"/>
                                         <subviews>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-4f-1gZ">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Pkb-4f-1gZ">
                                                 <rect key="frame" x="5" y="5" width="365" height="375"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="375" id="rOK-rG-5b1"/>
                                                 </constraints>
-                                                <mutableString key="text">App delegateReprezinta un set de metode care sunt chemate de UIAplication in raspuns la evenimente importante din viata aplicatiei.App delegate joaca cateva roluri importante:1. Contine startup code al aplicatiei.2.Raspunde la schimbari cheie, in special la intreruperi si la modificari in starea de executie a aplicatiei, de ex: can aplicatia face tranzitia de la foreground la background.3. Raspunde la notificari venite din  afara aplicatiei, de ex: low-memory warning, download complete, notifications etc.4.Raspunde la evenimente care targheteaza aplicatia dar nu sunt specifice View-ului aplicatiei sau view controllerelor.
-5.Se poate folosi sa stocheze Central Data Object sau orice alt cod care nu apartine de nici un view controller.</mutableString>
+                                                <string key="text">App delegate
+
+Reprezinta un set de metode care sunt chemate de UIAplication in raspuns la evenimente importante din viata aplicatiei.
+
+App delegate joaca cateva roluri importante:
+1. Contine startup code al aplicatiei.
+2.Raspunde la schimbari cheie, in special la intreruperi si la modificari in starea de executie a aplicatiei, de ex: can aplicatia face tranzitia de la foreground la background.
+3. Raspunde la notificari venite din  afara aplicatiei, de ex: low-memory warning, download complete, notifications etc.
+4.Raspunde la evenimente care targheteaza aplicatia dar nu sunt specifice View-ului aplicatiei sau view controllerelor.
+5.Se poate folosi sa stocheze Central Data Object sau orice alt cod care nu apartine de nici un view controller.</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
@@ -371,7 +380,71 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LPY-q7-qer" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="652" y="1429"/>
+            <point key="canvasLocation" x="1641" y="1424"/>
+        </scene>
+        <!--Coll Viewss Screen1-->
+        <scene sceneID="nIc-Ey-YMI">
+            <objects>
+                <viewController id="ahA-Vz-amI" customClass="collViewssScreen1" customModule="School_with_Cristina" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L7X-AY-DmP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dgb-Ad-RST">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="4p4-XE-nTl">
+                                    <size key="itemSize" width="141" height="107"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="bEr-wx-iHq" customClass="myColectionViewCell" customModule="School_with_Cristina" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="141" height="107"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="141" height="107"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YVP-pw-qpC">
+                                                    <rect key="frame" x="0.0" y="0.0" width="141" height="107"/>
+                                                </imageView>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="YVP-pw-qpC" firstAttribute="leading" secondItem="bEr-wx-iHq" secondAttribute="leading" id="K0e-qQ-J7G"/>
+                                            <constraint firstAttribute="trailing" secondItem="YVP-pw-qpC" secondAttribute="trailing" id="TMa-Q3-ugc"/>
+                                            <constraint firstAttribute="bottom" secondItem="YVP-pw-qpC" secondAttribute="bottom" id="Ux3-Di-7Ge"/>
+                                            <constraint firstItem="YVP-pw-qpC" firstAttribute="top" secondItem="bEr-wx-iHq" secondAttribute="top" id="rel-87-QCa"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="myImageView" destination="YVP-pw-qpC" id="qiw-45-85T"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="ahA-Vz-amI" id="w0v-Kn-Jw6"/>
+                                    <outlet property="delegate" destination="ahA-Vz-amI" id="io1-CA-GAr"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dgb-Ad-RST" firstAttribute="top" secondItem="L7X-AY-DmP" secondAttribute="top" id="Qyx-2p-Pku"/>
+                            <constraint firstItem="dgb-Ad-RST" firstAttribute="leading" secondItem="C9l-Dk-8mW" secondAttribute="leading" id="f3R-uT-RQk"/>
+                            <constraint firstItem="dgb-Ad-RST" firstAttribute="bottom" secondItem="C9l-Dk-8mW" secondAttribute="bottom" id="ge1-gb-U0D"/>
+                            <constraint firstItem="dgb-Ad-RST" firstAttribute="trailing" secondItem="C9l-Dk-8mW" secondAttribute="trailing" id="kYQ-OL-eiu"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="C9l-Dk-8mW"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionViewOutlet" destination="dgb-Ad-RST" id="eyZ-P2-ndB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Pnh-Qo-SKL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="857" y="1424"/>
         </scene>
         <!--Detail1B View Controller-->
         <scene sceneID="ym3-mi-A14">

@@ -8,6 +8,10 @@
 
 import UIKit
 
+
+
+
+
 class myVideoTableViewCell: UITableViewCell {
 
 
@@ -16,11 +20,15 @@ class myVideoTableViewCell: UITableViewCell {
     @IBOutlet var videoTitleLabel: UILabel!
     
     
+    
+    
     func setVideo(aVideo:Video)
     {
         videoImageView.image = aVideo.image
         videoTitleLabel.text = aVideo.title
     }
+    
+    
     
     
     
