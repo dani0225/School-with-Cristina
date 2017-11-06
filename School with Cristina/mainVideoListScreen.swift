@@ -20,6 +20,8 @@ class mainVideoListScreen: UIViewController {
     
     let segueToCollectionView = "mainToCollectionView"
     
+    let segueToTicTacToe = "mainToTicTacToe"
+    
     @IBOutlet var tableViewOutlet: UITableView!
     
     
@@ -87,7 +89,7 @@ class mainVideoListScreen: UIViewController {
         let video2 = Video(image: #imageLiteral(resourceName: "appDelegate"), title: "App")
         let video3 = Video(image: #imageLiteral(resourceName: "keyboard3"), title: "Keyboard")
         let video4 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Collection")
-        let video5 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your firdsadsadast App")
+        let video5 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "X si 0 cu AI")
         let video6 = Video(image: #imageLiteral(resourceName: "beginner-first-app"), title: "Your first App")
         
         tempVideos.append(video1)
@@ -145,6 +147,10 @@ extension mainVideoListScreen: UITableViewDataSource,UITableViewDelegate
         if indexPath.row == 3
         {
             performSegue(withIdentifier: segueToCollectionView, sender: video)
+        }
+        if indexPath.row == 4
+        {
+            performSegue(withIdentifier: segueToTicTacToe, sender: video)
         }
         
         

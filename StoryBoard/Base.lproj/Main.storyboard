@@ -90,6 +90,7 @@
                         <segue destination="ZwT-Zj-ifE" kind="show" identifier="mainToAppDelegate" id="pQN-kb-0xb"/>
                         <segue destination="F9o-XY-9DJ" kind="show" identifier="keyBoardScreen1" id="aFZ-gF-cRp"/>
                         <segue destination="ahA-Vz-amI" kind="show" identifier="mainToCollectionView" id="8da-jA-bTm"/>
+                        <segue destination="T1z-yI-07B" kind="show" identifier="mainToTicTacToe" id="Wcb-n6-sbF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -566,6 +567,14 @@ App delegate joaca cateva roluri importante:
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pz4-3R-50d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="188" y="-13"/>
+        </scene>
+        <!--ticTacToeStoryboard-->
+        <scene sceneID="gfl-gh-XiC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ticTacToeStoryboard" id="T1z-yI-07B" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ll4-5A-fd8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="72" y="641"/>
         </scene>
     </scenes>
     <resources>
